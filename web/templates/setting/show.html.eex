@@ -1,0 +1,18 @@
+<h2>Show setting</h2>
+
+<ul>
+
+  <li>
+    <strong>Name:</strong>
+    <%= @setting.name %>
+  </li>
+
+  <li>
+    <strong>User:</strong>
+    <%= @setting.user %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: setting_path(@conn, :edit, @setting) %>
+<%= link "Back", to: setting_path(@conn, :index) %>

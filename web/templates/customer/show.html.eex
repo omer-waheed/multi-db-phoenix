@@ -1,0 +1,18 @@
+<h2>Show customer</h2>
+
+<ul>
+
+  <li>
+    <strong>Cinc:</strong>
+    <%= @customer.cinc %>
+  </li>
+
+  <li>
+    <strong>User:</strong>
+    <%= @customer.user %>
+  </li>
+
+</ul>
+
+<%= link "Edit", to: customer_path(@conn, :edit, @customer) %>
+<%= link "Back", to: customer_path(@conn, :index) %>
